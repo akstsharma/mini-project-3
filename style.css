@@ -1,0 +1,526 @@
+body{
+	margin: 0;
+	padding:0;
+	background: url(https://images.pexels.com/photos/1656579/pexels-photo-1656579.jpeg?cs=srgb&dl=android-wallpaper-australia-beach-1656579.jpg&fm=jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:100vh;
+	width:100%;
+	background-attachment: fixed;
+	scroll-snap-type: y mandatory;
+}
+.heading{
+	position: relative;
+	height: auto;
+	width:100%;
+	margin:0px auto;
+	text-align: center;
+	background:rgba(255, 255, 255, 0.1);
+	box-shadow:0px 5px 10px rgba(0, 0, 0, 0.2);
+	font-family: sans-serif;
+	font-size: 48px;
+	font-weight: 600;
+	color:#ffffff;
+	padding:10px 0px;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	scroll-snap-align: center;
+}
+.main{
+	position: relative;
+	height:100vh;
+	width:100%;
+	margin:0;
+	scroll-snap-align: center;
+}
+.effect1-heading{
+	position: sticky;
+  	top:0;
+	height:auto;
+	width:100%;
+	background:rgba(255, 255, 255, 0.5);
+	padding:10px 0;
+	z-index: 1;
+	text-align: center;
+}
+.effect1{
+	position:relative;
+	height:400px;
+	width:80%;
+	background:rgba(255, 255, 255, 0.2);
+	margin: 10% auto;
+	padding:10px 0px;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.effect1 h1{
+	position: absolute;
+	top:5%;
+	color: #fff;
+	font-family: serif;
+	font-weight: 600;
+	font-size:35px;
+	background:rgba(0, 0, 0, 0.5);
+	padding:10px;
+	border-right:5px solid #017bf5;
+	border-left:5px solid #017bf5;
+}
+.effect1 > button{
+	position: relative;
+	height:auto;
+	width:20%;
+	padding:20px 20px;
+	cursor: pointer;
+	color:#fff;
+	background:rgba(0, 0, 0, 0.9);
+	border:none;
+	border-radius:none;
+	outline: none;
+	margin-right: 15px;
+	overflow: hidden;
+}
+.effect1 > button > span{
+	position: relative;
+	z-index:1;
+	height:100%;
+	width:100%;
+	color: #fff;
+	overflow: hidden;
+}
+.effect1 > button:before{
+	position: absolute;
+	top: 0;
+	left:97%;
+	content: '';
+	background:#017bf5;
+	width:100%;
+	height:100%;
+	z-index:0;
+	transition: 0.5s all;
+}
+.effect1 > button:hover:before{
+	left:0;
+}
+.effect1  button:nth-child(3):before{
+	position: absolute;
+	top: 0;
+	left:-97%;
+	content: '';
+	background:#017bf5;
+	width:100%;
+	height:100%;
+	z-index:0;
+	transition: 0.5s all;
+}
+.effect1  button:nth-child(3):hover:before{
+	left:0;
+}
+.effect1  button:nth-child(4):before{
+	position: absolute;
+	top:90%;
+	left:0;
+	content: '';
+	background:#017bf5;
+	width:100%;
+	height:100%;
+	z-index:0;
+	transition: 0.5s all;
+}
+.effect1  button:nth-child(4):hover:before{
+	top: 0;
+}
+.effect1  button:nth-child(5):before{
+	position: absolute;
+	top:-90%;
+	left:0;
+	content: '';
+	background:#017bf5;
+	width:100%;
+	height:100%;
+	z-index:0;
+	transition: 0.5s all;
+}
+.effect1  button:nth-child(5):hover:before{
+	top: 0;
+}
+
+		/*-----------------------------effect 2---------------------------------*/
+.effect2-heading{
+	position: sticky;
+  	top:0;
+	height:auto;
+	width:100%;
+	background:rgba(255, 255, 255, 0.5);
+	padding:10px 0px;
+	z-index: 1;
+	text-align: center;
+	margin:0;
+}
+.effect2{
+	position:relative;
+	height:400px;
+	width:80%;
+	background:rgba(255, 255, 255, 0.2);
+	margin: 10% auto;
+	padding:10px 0px;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.effect2 h1{
+	position: absolute;
+	top:5%;
+	color: #fff;
+	font-family: serif;
+	font-weight: 600;
+	font-size:35px;
+	background:rgba(0, 0, 0, 0.5);
+	padding:10px;
+	border-right:5px solid #017bf5;
+	border-left:5px solid #017bf5;
+}
+.effect2 > button{
+	position: relative;
+	height:auto;
+	width:20%;
+	padding:20px 20px;
+	cursor: pointer;
+	color:#fff;
+	background:rgba(0, 0, 0, 0.9);
+	border:none;
+	border-radius:none;
+	outline: none;
+	margin-right: 15px;
+	overflow: hidden;
+}
+.effect2 > button > span{
+	position: relative;
+	z-index:1;
+	height:100%;
+	width:100%;
+	color: #fff;
+	overflow: hidden;
+}
+.effect2 > button:before{
+	content: '';
+	position: absolute;
+	top:-85%;
+	left:95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect2 > button:hover:before{
+	top:0;
+	left:0;
+}
+.effect2 button:nth-child(3):before{
+	content: '';
+	position: absolute;
+	top:-85%;
+	left:-95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect2 button:nth-child(3):hover:before{
+	top:0;
+	left:0;
+}
+.effect2 button:nth-child(4):before{
+	content: '';
+	position: absolute;
+	top:85%;
+	left:-95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect2 button:nth-child(4):hover:before{
+	top: 0;
+	left:0;
+}
+
+.effect2 button:nth-child(5):before{
+	content: '';
+	position: absolute;
+	top:85%;
+	right:-95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect2 button:nth-child(5):hover:before{
+	top: 0;
+	right:0;
+}
+
+		/*-----------------------------effect 3---------------------------------*/
+.effect3-heading{
+	position: sticky;
+  	top:0;
+	height:auto;
+	width:100%;
+	background:rgba(255, 255, 255, 0.5);
+	padding:10px 0px;
+	z-index: 1;
+	text-align: center;
+	margin:0;
+}
+.effect3{
+	position:relative;
+	height:400px;
+	width:80%;
+	background:rgba(255, 255, 255, 0.2);
+	margin: 10% auto;
+	padding:10px 0px;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.effect3 h1{
+	position: absolute;
+	top:5%;
+	color: #fff;
+	font-family: serif;
+	font-weight: 600;
+	font-size:35px;
+	background:rgba(0, 0, 0, 0.5);
+	padding:10px;
+	border-right:5px solid #017bf5;
+	border-left:5px solid #017bf5;
+}
+.effect3 > button{
+	position: relative;
+	height:auto;
+	width:20%;
+	padding:20px 20px;
+	cursor: pointer;
+	color:#fff;
+	background:rgba(0, 0, 0, 0.9);
+	border:none;
+	border-radius:none;
+	outline: none;
+	margin-right: 15px;
+	overflow: hidden;
+}
+.effect3 > button > span{
+	position: relative;
+	z-index:1;
+	height:100%;
+	width:100%;
+	color: #fff;
+	overflow: hidden;
+}
+.effect3 > button:before{
+	content: '';
+	position: absolute;
+	top:-85%;
+	left:95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect3 > button:hover:before{
+	left:0;
+}
+.effect3 button:nth-child(3):before{
+	content: '';
+	position: absolute;
+	top:-85%;
+	left:-95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect3 button:nth-child(3):hover:before{
+	left:0;
+}
+.effect3 button:nth-child(4):before{
+	content: '';
+	position: absolute;
+	top:85%;
+	left:-95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect3 button:nth-child(4):hover:before{
+	bottom: 0;
+	left:0;
+}
+
+.effect3 button:nth-child(5):before{
+	content: '';
+	position: absolute;
+	top:85%;
+	right:-95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect3 button:nth-child(5):hover:before{
+	bottom: 0;
+	left:0;
+}
+
+
+		/*-----------------------------effect 4---------------------------------*/
+.effect4-heading{
+	position: sticky;
+  	top:0;
+	height:auto;
+	width:100%;
+	background:rgba(255, 255, 255, 0.5);
+	padding:10px 0px;
+	z-index: 1;
+	text-align: center;
+	margin:0;
+}
+.effect4{
+	position:relative;
+	height:400px;
+	width:80%;
+	background:rgba(255, 255, 255, 0.2);
+	margin: 10% auto;
+	padding:10px 0px;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.effect4 h1{
+	position: absolute;
+	top:5%;
+	color: #fff;
+	font-family: serif;
+	font-weight: 600;
+	font-size:35px;
+	background:rgba(0, 0, 0, 0.5);
+	padding:10px;
+	border-right:5px solid #017bf5;
+	border-left:5px solid #017bf5;
+}
+.effect4 > button{
+	position: relative;
+	height:auto;
+	width:20%;
+	padding:20px 20px;
+	cursor: pointer;
+	color:#fff;
+	background:rgba(0, 0, 0, 0.9);
+	border:none;
+	border-radius:none;
+	outline: none;
+	margin-right: 15px;
+	overflow: hidden;
+}
+.effect4 > button > span{
+	position: relative;
+	z-index:1;
+	height:100%;
+	width:100%;
+	color: #fff;
+	overflow: hidden;
+}
+.effect4 > button:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:-95%;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+	opacity: 0;
+}
+.effect4 > button:hover:before{
+	bottom:0;
+	opacity: 1;
+}
+.effect4 button:nth-child(3):before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:95%;
+	opacity: 0;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+}
+.effect4 button:nth-child(3):hover:before{
+	bottom:0;
+	opacity: 1;
+}
+.effect4 button:nth-child(4):before{
+	content: '';
+	position: absolute;
+	top:-85%;
+	left:0;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+	opacity: 0;
+}
+.effect4 button:nth-child(4):hover:before{
+	opacity: 1;
+	left:0;
+}
+
+.effect4 button:nth-child(5):before{
+	content: '';
+	position: absolute;
+	top:85%;
+	left:0;
+	height:100%;
+	width:100%;
+	background:#017bf5;
+	transition: 0.7s all;
+	opacity: 0;
+}
+.effect4 button:nth-child(5):hover:before{
+	opacity: 1;
+	left:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+				/*---------------------------THANKS-------------------------*/
+
+.TEXTCENTER{
+	height:auto;
+	width:80%;
+	background:rgba(255, 255, 255, 0.5);
+	padding:10px 0px;
+	z-index: 1;
+	text-align: center;
+	margin:0;
+}
